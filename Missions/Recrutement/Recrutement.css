@@ -141,15 +141,16 @@ footer {
  }
  
  .footer-top{
-     display: flex;
-     flex-direction: row;
-     /* align-items: flex-start; */
-     justify-content: center;
-     text-align: center;
-     background-color: #112757;
-     justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    background-color: #112757;
+    justify-content: center;
 
- }
+}
+
  .footer-bottom{
      background-color: #001b49;
      text-align: center;
@@ -239,3 +240,106 @@ footer {
     
 }
 /* Responsivity END */
+
+
+
+
+
+
+
+
+
+
+
+
+/* BODY CONTENTS  BEGIN */
+
+.blue-zone{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #014ca8;
+    width: fit-content;
+    color: whitesmoke;
+    padding: 60px 0px;
+}
+
+.blue-zone-text{
+   width: 40%;
+   padding: 50px;
+   margin-top: 44px;
+}
+.blue-zone-text-header{
+    text-align: center;
+}
+
+.blue-zone-image{
+    width: 40%;
+    padding: 50px;
+    text-align: center;
+}
+
+.header-and-separator{
+    text-align: center;
+    color: rgb(77, 77, 77);
+    margin-top: 50px;
+   
+}
+
+.separator{
+    margin: 40px auto;
+    width: 70%;
+}
+
+.recrutement-types{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
+    padding-bottom: 90px; 
+}
+
+.recrutement-annonce{
+    width: 30%;
+    padding: 20px 50px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 10px;
+    background-color: #014ca8;
+    color: whitesmoke;
+
+}
+
+.recrutement-distance{
+    width: 30%;
+    padding: 20px 50px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 10px;
+    background-color: #014ca8;
+    color: whitesmoke;
+}
+
+.recrutement-image{
+    height: 70px;
+    width: 70px;
+}
+
+.recrutement-header{
+    font-size: 26px;
+    margin: 37px 0px;
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 15px;
+}
+
+.recrutement-paragraphe{
+    font-size: 16px ;
+}
+
+.recrutement-divider{
+    height: 0.5px;
+    background-color: whitesmoke;
+
+}
+
+
+/* BODY CONTENTS  END */

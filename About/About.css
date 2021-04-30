@@ -141,15 +141,17 @@ footer {
  }
  
  .footer-top{
-     display: flex;
-     flex-direction: row;
-     /* align-items: flex-start; */
-     justify-content: center;
-     text-align: center;
-     background-color: #112757;
-     justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    background-color: #112757;
+    justify-content: center;
 
- }
+}
+
+
  .footer-bottom{
      background-color: #001b49;
      text-align: center;

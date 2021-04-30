@@ -8,6 +8,7 @@ html, body
 
   /* application's default font family as Montserrat */
   font-family: 'Montserrat';
+
   
 }
 
@@ -28,14 +29,14 @@ html, body
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px 30px;
+    padding: 3px 30px;
     width: 100%;
-    height: 70px;
+    /* height: 70px; */
     align-items: center;
     background-color: #ecf4ff;
     box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
-
 }
+
 
 .header-tabs{
     display: flex;
@@ -54,6 +55,7 @@ html, body
     background-color:  rgb(5, 5, 44) ;
     padding: 8px;
     border-radius: 5px;
+
 }
 .header-item-link{
     color: rgb(5, 5, 44) ;
@@ -61,6 +63,7 @@ html, body
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     padding: 8px;
+    text-emphasis: initial;
 
 }
 .dropbtn{
@@ -140,9 +143,12 @@ footer {
  .footer-top{
      display: flex;
      flex-direction: row;
-     align-items: flex-start;
+     /* align-items: flex-start; */
+     justify-content: center;
+     text-align: center;
      background-color: #112757;
      justify-content: center;
+
  }
  .footer-bottom{
      background-color: #001b49;
@@ -150,25 +156,27 @@ footer {
      padding: 10px;
      color: rgba(255, 255, 255, 0.607);
  }
+
+ .footer-left
+ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 20%;
+    margin-left: 50px;
+
+}
+
  
  .footer-right{
      display: flex;
      flex-direction: column;
-     align-items: center;
-     width: 20%;
-     
+     flex: 25%;
+     text-align: center;
     }
     
     
-    .footer-left{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 23%;
-        margin-right: 80px;
- 
- }
- 
+
  .footer-list{
      list-style: none;
  }
@@ -195,3 +203,37 @@ footer {
 
  }
 /* FOOTER STYLE END */
+
+
+
+
+
+/* Responsivity BEGIN */
+/* if screen width reached 900px, make nav and header links container as a column instead of row */
+@media all and (max-width: 1080px)
+{
+    .header-navbar, .header-tabs
+    {
+         flex-direction: column;
+    }
+    .header-item
+    {
+        margin: 10px;
+    }
+    
+}
+
+/* if screen width reached 650px, make footer top as a column instead of row */
+@media all and (max-width: 650px)
+{
+    .footer-top
+    {
+         flex-direction: column;
+    }
+    .footer-left{
+        margin-left: 0; /*undo margin left to centerize it*/
+    
+    }
+    
+}
+/* Responsivity END */

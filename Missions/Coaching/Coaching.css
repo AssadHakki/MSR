@@ -237,3 +237,61 @@ footer {
     
 }
 /* Responsivity END */
+
+
+
+
+
+
+/* BODY CONTENT BEGIN */
+
+
+.coaching-header-and-separator{
+    text-align: center;
+    color: rgb(77, 77, 77);
+    margin: 120px 0px;
+   
+}
+.separator{
+    width: 40%;
+}
+
+.coaching-blue-zone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #014ca8;
+    width: 100%;
+    height: fit-content;
+    color: whitesmoke;
+    padding: 100px 0px;
+    align-items: center;
+    text-align: center;
+
+    margin: 0px 0px 130px 0px;
+}
+
+.coaching-image{
+
+    margin-bottom: 90px;
+
+}
+.coaching-text{
+
+    width: 53%;
+    font-size: 30px;
+}
+
+
+
+ /* BODY CONTENT END  */
+
+
+
+
+
+
+
+
+
+

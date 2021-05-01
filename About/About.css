@@ -239,3 +239,54 @@ footer {
     
 }
 /* Responsivity END */
+
+
+
+
+
+
+
+
+
+/* BODY CONTENTS BEGIN */
+.about-header{
+    text-align: center;
+    color: rgb(77, 77, 77);
+    margin: 120px 0px;
+   
+}
+.about-blue-zone{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #014ca8;
+    width: 100%;
+    color: whitesmoke;
+    padding: 60px 0px;
+    text-align: center;
+    align-items: center;
+}
+
+
+.about-image{
+    width: 500px; 
+}
+.about-blue-zone-image{
+    width: 40%;
+}
+
+.about-blue-zone-text{
+    width: 40%;
+}
+
+.about-paragraphe{
+    text-align: left;
+}
+
+
+
+
+
+
+
+/* BODY CONTENTS END */

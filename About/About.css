@@ -262,29 +262,74 @@ footer {
     background-color: #014ca8;
     width: 100%;
     color: whitesmoke;
-    padding: 60px 0px;
+    padding: 100px 0px 0px;
     text-align: center;
-    align-items: center;
+    align-self: flex-start;
+
+    margin-bottom: 180px;
 }
 
 
 .about-image{
     width: 500px; 
+    margin-left: 100px;
 }
 .about-blue-zone-image{
     width: 40%;
 }
 
 .about-blue-zone-text{
-    width: 40%;
+    width: 45%;
 }
 
 .about-paragraphe{
     text-align: left;
 }
 
+.about-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
 
+.button-contact{
+    text-align: center;
+    padding: 8px 10px;
+    background-color: #002046;
+    color: whitesmoke;
+    margin: 80px 20px 80px 0px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    /* text-emphasis: initial; */
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 186px;
 
+}
+
+.button-postuler{
+    text-align: center;
+    padding: 8px 10px;
+    background-color: #002046;
+    color: whitesmoke;
+    margin: 80px 0px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    /* text-emphasis: initial; */
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 186px;
+}
+
+.button-contact:hover, .button-postuler:hover{
+    cursor: pointer;
+    color: whitesmoke;
+    background-color:  #234768 ;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
 
 
 

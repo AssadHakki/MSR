@@ -12,10 +12,16 @@
     <!-- Google font  -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <!-- For input icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
      <!-- jQuery -->
      <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
+
+ 
 </head>
+
 <body >
 
   <!-- HEADER BEGIN -->
@@ -51,20 +57,58 @@
   <!-- HEADER END -->
 
 
+  <div class="contact-image">  
+      <h1 class="contact-header-text">Contact</h1>
+  </div>
 
 
-  <div style="padding: 240px;">
+  <div class="container">
 
-    Contact page <br>
-    Contact page <br>
-    Contact page <br>
-    Contact page <br>
-    Contact page <br>
-    Contact page <br>
+    <div class="contact-us">
+      <h3>Vous avez des questions ?</h3>
+      <div class="divider"></div>
+      <p>N’hésitez pas à nous contacter<small> (Les champs suivis d’un * sont obligatoires).</small></p>
+
+      <form action="#" class="contact-us-form">
+
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" type="text" placeholder="Nom *" name="nom" required>
+        </div>
+
+   
+        <div class="input-container">
+          <i class="fa fa-envelope icon"></i>
+          <input class="input-field" type="text" placeholder="Email *" name="email" required>
+        </div>
+
+        <div class="input-container">
+          <i class="fa fa-phone icon"></i>
+          <input class="input-field" type="tel" placeholder="Téléphone *" name="telephone" required>
+        </div>
+
+        <div class="input-container">
+          <i class="fa fa-file-text icon"></i>
+          <!-- <input class="input-field" type="text" placeholder="Message*" name="message"> -->
+          <textarea class="input-field" name="message"  cols="30" rows="3" placeholder="Message *" data-required="true" aria-required="true"></textarea>
+
+        </div>
+        
       
-    
-</div>
- 
+        <button type="submit" class="btn">ENVOYER LE MESSAGE</button>
+      </form>
+
+    </div>
+
+      <div class="adresse-container">
+        <h3>Adresse</h3>
+        <div class="divider"></div>
+        <p>97 Rue Araar<br> Etg 3<br> Mers Sultan Casablanca<br> MAROC</p>      
+      </div>
+
+  
+  </div>
+
  
 
   <!-- FOOTER BEGIN -->

@@ -7,7 +7,7 @@ html, body
   margin: 0;
 
   /* application's default font family as Montserrat */
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', monospace !important;
 
   
 }
@@ -151,7 +151,7 @@ footer {
 
 }
 
- }
+ 
  .footer-bottom{
      background-color: #001b49;
      text-align: center;

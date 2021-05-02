@@ -7,7 +7,7 @@ html, body
   margin: 0;
 
   /* application's default font family as Montserrat */
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', monospace !important;
 
   
 }
@@ -151,7 +151,7 @@ footer {
 
 }
 
- }
+ 
  .footer-bottom{
      background-color: #001b49;
      text-align: center;
@@ -246,9 +246,128 @@ footer {
 
 
 
+/* BODY CONTENT BEGIN */
+
+
+/* ENGAGEMENTS  */
+.engagement-zone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B6ABC;
+    margin: 50px 0px; 
+}
+.engagement-header{
+    color: whitesmoke;
+    margin: 50px;
+}
+.engagement-boxes{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: flex-start;
+   color: whitesmoke;
+}
+.engagement-card{
+    width: 13%;
+    text-align: center;
+    margin: 0px 65px 40px;
+    font-size: 15px;
+}
+.engagement-image{
+    width: 50px;
+}
+.engagement-card-header{
+    text-transform: uppercase;
+}
+/* ENGAGEMENTS  */
 
 
 
+
+
+/* QUESTIONS CARDS */
+
+.question-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 100px 0px;
+}
+.question-card{
+    width: 420px;
+    padding: 0px 20px;
+    text-align: center;
+}
+.question{
+    border: 1px solid rgba(65, 100, 161, 0.179);
+    padding: 20px 20px 50px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.question-header{
+    font-size: 22px;
+    font-weight: 800;
+    color: rgb(22, 22, 22);
+}
+.question-text{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 25px;
+}
+.question-button{
+    margin-top: 30px;
+}
+.button{
+    background-color: #2B6ABC;
+    border-radius: 8px;
+    font-weight: 500;
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.button:hover{
+    background-color: #003D82;
+}
+/* QUESTIONS CARDS */
+
+
+
+
+
+/* CONTACT DIV */
+
+.contact-zone{
+    background-color: #003D82;
+    text-align: center;
+    padding: 50px 50px 80px 50px;
+    margin: 50px 0px;
+}
+.contact-text{
+    color: whitesmoke;
+}
+.contact-btn{
+    background-color: #002F63;
+    border-radius: 8px;
+    font-weight: 500;
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: 30px;
+}
+.contact-btn:hover{
+    background-color: #2B6ABC;
+}
+
+/* CONTACT DIV */
+
+/* BODY CONTENT END */
 
 
 

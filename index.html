@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +15,77 @@
      <!-- jQuery -->
      <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
+
+     <!-- Slick (Carousel Slider Library) BEGIN -->
+     <!-- Add the slick-theme.css if you want default styling -->
+     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+     <!-- Add the slick-theme.css if you want default styling -->
+     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <!-- Slick (Carousel Slider Library) END -->
+
 </head>
-<body >
+
+
+
+<script>
+  // Carousel slide elements data, each slide has title, description & image.
+  const carousel_data =
+  [
+    {
+      "text": "Venez SANS, parter AVEC un emploi.",
+      "image": "/Assets/Images/Slider-1.jpg"
+    },
+    {
+      "text": "Notre rôle : vous conseiller, vous accompagner gratuitement",
+      "image": "/Assets/Images/Slider-2.jpg"
+    },
+    
+  ];
+  
+  $(document).ready(function()
+  {
+      // Insert elements into carousel div
+      carousel_data.forEach((slide)=>
+      {
+        // deconstruct each slide element properties
+        const { text, image } = slide;
+        // add slide element to carousel container
+       // $(".carousel").append(`<div class="carousel-item"> <img src="${image}" alt="MSR"> </div>`);
+       $(".carousel").append(`
+       <div class="carousel-item" style="background-image: url(${image}); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 100%; width: 100%;">
+        <div class="transparent-black" style="background-color: rgba(0, 0, 0, 0.5);  width: 100%; height: 680px; display: flex; justify-content: center; align-items: center;">
+        <div class="carousel-item-text" style="width: 60%; font-size: 36px; overflow:hidden; letter-spacing: 0px; font-weight: 900; color: white; text-transform: uppercase; padding: 33px; text-align: center;">
+          ${text}
+          </div>
+        </div>
+      </div>
+       `);
+      
+      });
+
+
+      // configure slick lib carousel https://kenwheeler.github.io/slick/#go-get-it
+      $('.carousel').slick({
+        initialSlide: 0, // index of the initial slide to show
+        autoplay: true, //enable/disable automatique slide
+        autoplaySpeed: 3000, // automatique slide each 3seconds
+        dots: true, // show dots bellow carouses
+        arrows: false, // show/hide left and right arrows
+        infinite: true, // go back to first element on end of scroll
+        speed: 1000, // scroll during 1second
+        slidesToShow: 1, // show 1 slide element at the time
+        slidesToScroll: 1, // scroll by  1
+        centerMode: false, // shows part of next and previous slides
+        mobileFirst: true, // Responsive settings use mobile first calculation
+        adaptiveHeight: true, // animates when slide height changes
+      });
+
+  });
+</script>
+ 
+
+<body class="background-image">
 
 
   <!-- HEADER BEGIN -->
@@ -25,13 +94,12 @@
 
     <ul class="header-tabs">
       <li class="header-item">
-        <a class="header-item-link" href="/index.html" >Accueil</a>
+        <a class="header-item-link" id="opened-page" href="/index.html" >Accueil</a>
       </li>
       <li class="header-item">
         <a class="header-item-link"  href="/About/About.html" >Qui Sommes Nous?</a>
       </li>
       <li class="header-item">
-        <!-- <a class="header-item-link"  href="#" >Nos Mission</a> -->
         <div class="dropdown">
           <a class="dropbtn">Nos Missions</a>
           <div class="dropdown-content">
@@ -54,6 +122,15 @@
 
 
 <!-- BODY CONTENT BEGIN -->
+
+
+<!-- Carousel Slider BEGIN (items will be inserted with javascript) -->
+<div class="carousel">
+
+</div>
+<!-- Carousel Slider END -->
+
+
 
 <!-- ENGAGEMENTS -->
 <div class="engagement-zone">
@@ -84,7 +161,27 @@
 <!-- ENGAGEMENTS -->
 
 
-<!-- QUESTION CARDS -->
+
+<!-- RECRUTEMENTS DIV BEGIN -->
+<div class="rec-container">
+  <div class="rec-image-div">
+    <img class="rec-image" src="/Assets/Images/candidate-01.png" >
+  </div>
+  <div class="rec-header-text-btn">
+    <h2 class="rec-header">RECRUTEMENT COMPLET</h2>
+    <hr>
+    <p class="rec-text">Lors d’un recrutement complet, TT Services prend en charge la totalité du processus de recrutement pour votre compte, en lien constant avec vous. L’employeur nous confie une mission que nous menons de la prise d’informations sur le poste à la proposition de candidats adaptés à rencontrer.</p>
+    <br>
+    <br>
+    <a class="rec-btn" href="/Missions/Recrutement/Recrutement.html"> En savoir plus</a>
+  </div>
+</div>
+<!-- RECRUTEMENTS DIV END -->
+
+
+
+
+<!-- QUESTION CARDS BEGIN -->
   <div class="question-container">
     <div class="question-card">
       <div class="question">
@@ -114,9 +211,11 @@
        </div>   
     </div>
   </div>
-<!-- QUESTIONS CARDS -->
+<!-- QUESTIONS CARDS END -->
 
-<!-- CONTACT DIV -->
+
+
+<!-- CONTACT BEGIN -->
 <div class="contact-zone">
   <div class="contact-text">
     <h2>Si vous avez besoin de plus d'informations n'hésitez pas à nous contacter !</h2>
@@ -126,7 +225,7 @@
   </div>
 </div>
 
-<!-- CONTACT DIV -->
+<!-- CONTACT END -->
 
  <!-- BODY CONTENT END -->
 

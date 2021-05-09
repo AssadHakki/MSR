@@ -202,6 +202,19 @@ footer {
     min-width: 250px;
 }
 
+.about-image
+{
+    transition: 1s;
+
+}
+.about-image:hover
+{
+    transition: 1s;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    transform: translate3d(0px, -5px, 0px);
+}
+
 .about-blue-zone-text{
     width: 45%;
     min-width: 300px;

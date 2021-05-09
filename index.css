@@ -178,9 +178,18 @@ footer {
 .engagement-card{
     width: 15%;
     text-align: center;
-    margin: 0px 65px 40px;
+    margin: 0 60px 10px 20px;
     font-size: 15px;
+    
 }
+.engagement-card:hover
+{
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    transform: translate3d(0px, -5px, 0px);
+}
+
 .engagement-image{
     width: 50px;
 }
@@ -189,7 +198,8 @@ footer {
 }
 .engagement-card p{
     min-width: 100px;
-    text-align: start;
+    text-align: center;
+
 }
 
 /* ENGAGEMENTS  */
@@ -214,6 +224,12 @@ footer {
     text-align: center;
     margin: 20px;
 
+}
+.question:hover 
+{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    transform: translate3d(0px, -1px, 0px);
 }
 .question{
     border: 1px solid rgba(65, 100, 161, 0.179);

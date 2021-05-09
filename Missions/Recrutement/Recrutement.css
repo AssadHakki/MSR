@@ -223,6 +223,12 @@ footer {
     background-color: #014ca8;
     color: whitesmoke;
 }
+.recrutement-annonce:hover, .recrutement-distance:hover
+{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    transform: translate3d(0px, -5px, 0px);
+}
 
 .recrutement-image{
     height: 70px;

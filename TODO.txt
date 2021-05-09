@@ -1,15 +1,16 @@
 DONE - Make js libraries like carousel and slick local to avoid security block error
-- Add website tab icon .ico <link rel="icon" href="./Assets/Logo.png">
-- Change paths to ./../ in index.html & index.css
-- Change paths to ./../ in Postuler.html & Postuler.css
-- Change paths to ./../ in Recrutement.html & Recrutement.css
-- Change paths to ./../ in Coaching.html & Coaching.css
-- Change paths to ./../ in Contact.html & Contact.css
-- Change paths to ./../ in About.html & About.css
+DONE - Implement responsive humburger header links
+DONE - Add website tab icon .ico <link rel="icon" href="./Assets/Images/Logo.png"> to all pages
+DONE - Change paths to ./../ in index.html & index.css
+DONE - Change paths to ./../ in Postuler.html & Postuler.css
+DONE - Change paths to ./../ in Recrutement.html & Recrutement.css
+DONE - Change paths to ./../ in Coaching.html & Coaching.css
+DONE - Change paths to ./../ in Contact.html & Contact.css
+DONE - Change paths to ./../ in About.html & About.css
 DONE - Make index.html responsive
 - Make Postuler.html responsive
 - Make Recrutement.html responsive
 - Make Coaching.html responsive
 - Make Contact.html responsive
 - Make About.html responsive
-- Implement responsive humburger header links
+

@@ -162,17 +162,18 @@ footer {
 .blue-zone{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: #014ca8;
-    width: fit-content;
+    width: 100%;
     color: whitesmoke;
-    padding: 60px 0px;
 }
 
 .blue-zone-text{
    width: 40%;
-   padding: 50px;
-   margin-top: 44px;
+   padding: 30px;
+   margin: 15px;
+   min-width: 300px;
 }
 .blue-zone-text-header{
     text-align: center;
@@ -182,6 +183,8 @@ footer {
     width: 40%;
     padding: 50px;
     text-align: center;
+    min-width: 300px;
+    margin: 10px;
 }
 
 .header-and-separator{
@@ -199,11 +202,25 @@ footer {
 .recrutement-types{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;   
-    padding-bottom: 90px; 
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    margin: 30px;
+}
+.blue-zone-image img
+{
+    transition: 1s;
+}
+.blue-zone-image:hover img
+{
+    transition: 1s;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    transform: translate3d(0px, -5px, 0px);
 }
 
 .recrutement-annonce{
+    min-width: 300px;
+    margin: 10px;
     width: 30%;
     padding: 20px 50px;
     text-align: center;
@@ -215,6 +232,8 @@ footer {
 }
 
 .recrutement-distance{
+    min-width: 300px;
+    margin: 10px;
     width: 30%;
     padding: 20px 50px;
     text-align: center;

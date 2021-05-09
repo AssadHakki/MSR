@@ -186,6 +186,7 @@ footer {
 .container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 50px 0px 200px;
     width: 100%;
     justify-content: space-around;
@@ -193,6 +194,7 @@ footer {
 }
 .adresse-container
 {
+    min-width: 300px;
     background-color: #002F63;
     color: whitesmoke;
 
@@ -206,8 +208,14 @@ footer {
     border-radius: 6px;
     
 }
+.adresse-container, .contact-us
+{
+    transition: 1s;
+}
 .adresse-container:hover, .contact-us:hover
 {
+    transition: 1s;
+
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
     transform: translate3d(0px, -5px, 0px);
@@ -217,6 +225,7 @@ footer {
 {
     background-color: white;
 
+    min-width: 300px;
     width: 50%;
     height: fit-content;
 
@@ -287,28 +296,3 @@ footer {
     font-size: 10px;
     color: #aeaeae;
 }
-
-/*
-.adresse-container i{
-    background: #34879c;
-    font-size: 20px;
-
-    border-radius: 50%;
-    text-align: center;
-    line-height: 100px;
-    padding: 30px;
-
-
-
-}
-.adresse-container-item
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 10px;
-    font-weight: 500;
-    font-size: 15px;
-    text-align: center;
-}
-*/

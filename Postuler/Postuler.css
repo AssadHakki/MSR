@@ -192,6 +192,7 @@ footer {
     color: whitesmoke; */
 
     width: 70%;
+    min-width: 300px;
     height: fit-content;
 
     padding: 50px;

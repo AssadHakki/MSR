@@ -1,3 +1,9 @@
-- Add website tab icon .ico
-- Make pages responsive (including iphone)
-- 
+- Add website tab icon .ico <link rel="icon" href="./Assets/Logo.png">
+- Change paths from /path/ .. to ./../path/to/file
+- humburger header
+DONE - Make index.html responsive
+- Make Postuler.html responsive
+- Make Recrutement.html responsive
+- Make Coaching.html responsive
+- Make Contact.html responsive
+- Make About.html responsive

@@ -1,33 +1,39 @@
 html, body
 {
-  height: fit-content;
+    font-family: 'Montserrat', monospace !important; /* application's default font family as Montserrat */ 
+    
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* to hide extra right space in iPhone 5/SE */
 
-  /* to remove margin of header card in top */
-  padding: 0;
-  margin: 0;
-
-  /* application's default font family as Montserrat */
-  font-family: 'Montserrat', monospace !important;  
-
-  background-color: #1d2b49;
+    border: 0;
+    outline: 0;
+    
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
+
+
 
 /* Target everything to be a bordered box */
 *
 {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    margin:0;
+    padding:0; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
 
 
 /* HEADER STYLE BEGIN */
-
 .header-navbar{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 3px 30px;
     width: 100%;
@@ -41,12 +47,14 @@ html, body
 .header-tabs{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     list-style: none;
-    justify-content: flex-end;   
+    justify-content: center;
+    align-items: center;   
 }
 
 .header-item{
-    margin-right: 30px;
+    margin: 10px;
 }
 
 .header-item-link:hover{
@@ -55,7 +63,7 @@ html, body
     background-color:  rgb(5, 5, 44) ;
     padding: 8px;
     border-radius: 5px;
-    
+
 }
 #opened-page{
     cursor: pointer;
@@ -64,7 +72,6 @@ html, body
     padding: 8px;
     border-radius: 5px;
 }
-
 .header-item-link{
     color: rgb(5, 5, 44) ;
     text-transform: uppercase;
@@ -130,7 +137,6 @@ border-radius: 5px;
 
 
 
-
 /* FOOTER STYLE BEGIN */
 footer {
     color: whitesmoke;
@@ -146,17 +152,18 @@ footer {
      display: flex;
      flex-direction: column;
      width: 100%;
-     height: max-content;
  }
  
  .footer-top{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: center;
-    background-color: #112757;
-    justify-content: center;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     justify-content: center;
+     text-align: center;
+     background-color: #112757;
+     justify-content: center;
+     padding: 20px;
 
 }
 
@@ -167,14 +174,19 @@ footer {
      padding: 10px;
      color: rgba(255, 255, 255, 0.607);
  }
-
+.footer-top-block-title
+{
+    margin-bottom: 10px;
+}
  .footer-left
  {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex: 20%;
-    margin-left: 50px;
+    margin: 15px;
+
 
 }
 
@@ -182,8 +194,10 @@ footer {
  .footer-right{
      display: flex;
      flex-direction: column;
-     flex: 25%;
+     flex: 20%;
      text-align: center;
+     margin: 15px;
+
     }
     
     
@@ -214,41 +228,6 @@ footer {
 
  }
 /* FOOTER STYLE END */
-
-
-
-
-
-/* Responsivity BEGIN */
-/* if screen width reached 900px, make nav and header links container as a column instead of row */
-@media all and (max-width: 1080px)
-{
-    .header-navbar, .header-tabs
-    {
-         flex-direction: column;
-    }
-    .header-item
-    {
-        margin: 10px;
-    }
-    
-}
-
-/* if screen width reached 650px, make footer top as a column instead of row */
-@media all and (max-width: 650px)
-{
-    .footer-top
-    {
-         flex-direction: column;
-         align-items:center;
-    }
-    .footer-left{
-        margin-left: 0; /*undo margin left to centerize it*/
-    
-    }
-    
-}
-/* Responsivity END */
 
 
 

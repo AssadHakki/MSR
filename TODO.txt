@@ -1,3 +1,4 @@
+DONE - Make js libraries like carousel and slick local to avoid security block error
 - Add website tab icon .ico <link rel="icon" href="./Assets/Logo.png">
 - Change paths to ./../ in index.html & index.css
 - Change paths to ./../ in Postuler.html & Postuler.css

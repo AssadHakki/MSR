@@ -1,3 +1,0 @@
-- Add website tab icon .ico
-- Make pages responsive (including iphone)
-- 

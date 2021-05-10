@@ -1,58 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSR</title>
 
-    <!-- Style -->
-    <link rel="stylesheet" href="index.css">
+<head>
+  <!-- Tab icon -->
+  <link rel="icon" href="./Assets/Images/Logo.png"> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceil</title>
 
-    <!-- Google font  -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Style -->
+  <link rel="stylesheet" href="./index.css">
 
-     <!-- jQuery -->
-     <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <!-- Google font  -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap Library BEGIN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap Library END -->
+
+  <!-- Font awesome icons Library BEGIN -->
+  <link rel="stylesheet" href="./Libraries/font-awesome/css/font-awesome.min.css">
+  <!-- Font awesome icons Library END -->
+
+  <!-- jQuery -->
+  <script src="./Libraries/jquery/jquery-3.6.0.min.js"></script>
+
+  <!-- Slick (Carousel Slider Library) BEGIN -->
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" href="./Libraries/slick/slick.css">
+  <link rel="stylesheet" href="./Libraries/slick/slick-theme.css">
+  <script src="./Libraries/slick/slick.min.js"></script>
+  <!-- Slick (Carousel Slider Library) END -->
 
 
-     <!-- Slick (Carousel Slider Library) BEGIN -->
-     <!-- Add the slick-theme.css if you want default styling -->
-     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-     <!-- Add the slick-theme.css if you want default styling -->
-     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-     <!-- Slick (Carousel Slider Library) END -->
 
 </head>
 
 
 
+<!-- Carousel slider images script BEGIN  -->
 <script>
   // Carousel slide elements data, each slide has title, description & image.
   const carousel_data =
-  [
-    {
-      "text": "Venez SANS, parter AVEC un emploi.",
-      "image": "/Assets/Images/Slider-1.jpg"
-    },
-    {
-      "text": "Notre rôle : vous conseiller, vous accompagner gratuitement",
-      "image": "/Assets/Images/Slider-2.jpg"
-    },
-    
-  ];
-  
-  $(document).ready(function()
-  {
-      // Insert elements into carousel div
-      carousel_data.forEach((slide)=>
+    [
       {
-        // deconstruct each slide element properties
-        const { text, image } = slide;
-        // add slide element to carousel container
-       // $(".carousel").append(`<div class="carousel-item"> <img src="${image}" alt="MSR"> </div>`);
-       $(".carousel").append(`
+        "text": "Venez SANS, parter AVEC un emploi.",
+        "image": "./Assets/Images/Slider-1.jpg"
+      },
+      {
+        "text": "Notre rôle : vous conseiller, vous accompagner gratuitement",
+        "image": "./Assets/Images/Slider-2.jpg"
+      },
+
+    ];
+
+  $(document).ready(function () {
+    // Insert elements into carousel div
+    carousel_data.forEach((slide) => {
+      // deconstruct each slide element properties
+      const { text, image } = slide;
+      // add slide element to carousel container
+      // $(".carousel").append(`<div class="carousel-item"> <img src="${image}" alt="MSR"> </div>`);
+      $(".carousel").append(`
        <div class="carousel-item" style="background-image: url(${image}); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 100%; width: 100%;">
         <div class="transparent-black" style="background-color: rgba(0, 0, 0, 0.5);  width: 100%; height: 680px; display: flex; justify-content: center; align-items: center;">
         <div class="carousel-item-text" style="width: 60%; font-size: 36px; overflow:hidden; letter-spacing: 0px; font-weight: 900; color: white; text-transform: uppercase; padding: 33px; text-align: center;">
@@ -61,188 +83,216 @@
         </div>
       </div>
        `);
-      
-      });
+
+    });
 
 
-      // configure slick lib carousel https://kenwheeler.github.io/slick/#go-get-it
-      $('.carousel').slick({
-        initialSlide: 0, // index of the initial slide to show
-        autoplay: true, //enable/disable automatique slide
-        autoplaySpeed: 3000, // automatique slide each 3seconds
-        dots: true, // show dots bellow carouses
-        arrows: false, // show/hide left and right arrows
-        infinite: true, // go back to first element on end of scroll
-        speed: 1000, // scroll during 1second
-        slidesToShow: 1, // show 1 slide element at the time
-        slidesToScroll: 1, // scroll by  1
-        centerMode: false, // shows part of next and previous slides
-        mobileFirst: true, // Responsive settings use mobile first calculation
-        adaptiveHeight: true, // animates when slide height changes
-      });
+    // configure slick lib carousel https://kenwheeler.github.io/slick/#go-get-it
+    $('.carousel').slick({
+      initialSlide: 0, // index of the initial slide to show
+      autoplay: true, //enable/disable automatique slide
+      autoplaySpeed: 3000, // automatique slide each 3seconds
+      dots: true, // show dots bellow carouses
+      arrows: false, // show/hide left and right arrows
+      infinite: true, // go back to first element on end of scroll
+      speed: 1000, // scroll during 1second
+      slidesToShow: 1, // show 1 slide element at the time
+      slidesToScroll: 1, // scroll by  1
+      centerMode: false, // shows part of next and previous slides
+      mobileFirst: true, // Responsive settings use mobile first calculation
+      adaptiveHeight: true, // animates when slide height changes
+    });
+
+
+  });
+
+
+</script>
+<!-- Carousel slider images script END  -->
+
+
+<!-- Header nav hamburger script BEGIN  -->
+<script>
+  $(document).ready(function () {
 
   });
 </script>
- 
+<!-- Header nav hamburger script END  -->
+
 
 <body class="background-image">
 
 
-  <!-- HEADER BEGIN -->
-  <div class="header-navbar">
-    <img src="/Assets/Images/Logo.png" alt="MODERN SERVICES RECRUTEMENTS"  height="60">
+  <!-- Bootstrap HEADER NAV with Responsive hamburger BEGIN -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm p-3 mb-5 bg-white rounded justify-content-between"
+    style="margin: 0 !important; padding: 6px !important;">
+    <a class="navbar-brand" href="./index.html">
+      <img class="navbar-brand d-inline-block align-top" src="./Assets/Images/Logo.png" alt="MSR Logo" height="60px"
+        style="margin: 0 20px !important;">
+    </a>
 
-    <ul class="header-tabs">
-      <li class="header-item">
-        <a class="header-item-link" id="opened-page" href="/index.html" >Accueil</a>
-      </li>
-      <li class="header-item">
-        <a class="header-item-link"  href="/About/About.html" >Qui Sommes Nous?</a>
-      </li>
-      <li class="header-item">
-        <div class="dropdown">
-          <a class="dropbtn">Nos Missions</a>
-          <div class="dropdown-content">
-            <a href="/Missions/Recrutement/Recrutement.html">Recrutement</a>
-            <a href="/Missions/Coaching/Coaching.html"> Coaching</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Acceuil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./About/About.html">Qui Sommes Nous?</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Nos Missions
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./Missions/Recrutement/Recrutement.html">Recrutement</a>
+            <a class="dropdown-item" href="./Missions/Coaching/Coaching.html">Coaching</a>
           </div>
-         </div>
-      </li>
-      <li class="header-item">
-        <a class="header-item-link"  href="/Postuler/Postuler.html" >Postuler</a>
-      </li>
-      <li class="header-item">
-        <a class="header-item-link"  href="/Contact/Contact.html" >Contact</a>
-      </li>
-    </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Postuler/Postuler.html">Postuler</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Contact/Contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Bootstrap HEADER NAV with Responsive hamburger END -->
+
+
+
+  <!-- BODY CONTENT BEGIN -->
+
+
+  <!-- Carousel Slider BEGIN (items will be inserted with javascript) -->
+  <div class="carousel">
 
   </div>
-  <!-- HEADER END -->
+  <!-- Carousel Slider END -->
 
 
 
-<!-- BODY CONTENT BEGIN -->
-
-
-<!-- Carousel Slider BEGIN (items will be inserted with javascript) -->
-<div class="carousel">
-
-</div>
-<!-- Carousel Slider END -->
-
-
-
-<!-- ENGAGEMENTS -->
-<div class="engagement-zone">
-  <h3 class="engagement-header">NOS ENGAGEMENTS</h3>
+  <!-- ENGAGEMENTS -->
+  <div class="engagement-zone">
+    <h3 class="engagement-header">NOS ENGAGEMENTS</h3>
     <div class="engagement-boxes">
       <div class="engagement-card">
-        <img class="engagement-image" src="/Assets/Images/Engagement.png">
+        <img class="engagement-image" src="./Assets/Images/Engagement.png">
         <h4 class="engagement-card-header">Sympa</h4>
         <p>Une équipe sincère qui parle avec son coeur</p>
       </div>
       <div class="engagement-card">
-        <img class="engagement-image" src="/Assets/Images/Engagement.png">
+        <img class="engagement-image" src="./Assets/Images/Engagement.png">
         <h4 class="engagement-card-header">Simple</h4>
         <p>Une prestation lisible où on ne cache rien</p>
       </div>
       <div class="engagement-card">
-        <img class="engagement-image" src="/Assets/Images/Engagement.png">
+        <img class="engagement-image" src="./Assets/Images/Engagement.png">
         <h4 class="engagement-card-header">Sérieux</h4>
         <p>On dit ce qu'on fait et on fait ce qu'on dit</p>
       </div>
       <div class="engagement-card">
-        <img class="engagement-image" src="/Assets/Images/Engagement.png">
+        <img class="engagement-image" src="./Assets/Images/Engagement.png">
         <h4 class="engagement-card-header">Spécialisé</h4>
-        <p>On ne recrute que les profils dont nous pouvons juger l'expertise</p>  
+        <p>On ne recrute que les profils dont nous pouvons juger l'expertise</p>
       </div>
     </div>
-</div>
-<!-- ENGAGEMENTS -->
-
-
-
-<!-- RECRUTEMENTS DIV BEGIN -->
-<div class="rec-container">
-  <div class="rec-image-div">
-    <img class="rec-image" src="/Assets/Images/candidate-01.png" >
   </div>
-  <div class="rec-header-text-btn">
-    <h2 class="rec-header">RECRUTEMENT COMPLET</h2>
-    <hr>
-    <p class="rec-text">Lors d’un recrutement complet, TT Services prend en charge la totalité du processus de recrutement pour votre compte, en lien constant avec vous. L’employeur nous confie une mission que nous menons de la prise d’informations sur le poste à la proposition de candidats adaptés à rencontrer.</p>
-    <br>
-    <br>
-    <a class="rec-btn" href="/Missions/Recrutement/Recrutement.html"> En savoir plus</a>
+  <!-- ENGAGEMENTS -->
+
+
+
+  <!-- RECRUTEMENTS DIV BEGIN -->
+  <div class="rec-container">
+    <img class="rec-image" src="./Assets/Images/candidate-01.png">
+    <div class="rec-header-text-btn">
+      <h2 class="rec-header">RECRUTEMENT COMPLET</h2>
+      <hr width="50%">
+      <p class="rec-text">Lors d’un recrutement complet, TT Services prend en charge la totalité du processus de
+        recrutement pour votre compte, en lien constant avec vous. L’employeur nous confie une mission que nous menons
+        de la prise d’informations sur le poste à la proposition de candidats adaptés à rencontrer.</p>
+      <br>
+      <br>
+      <div class="rec-btn" href="./Missions/Recrutement/Recrutement.html">En savoir plus</div>
+    </div>
   </div>
-</div>
-<!-- RECRUTEMENTS DIV END -->
+  <!-- RECRUTEMENTS DIV END -->
 
 
 
 
-<!-- QUESTION CARDS BEGIN -->
+  <!-- QUESTION CARDS BEGIN -->
   <div class="question-container">
     <div class="question-card">
       <div class="question">
         <p class="question-header"> Envie d'en savoir plus ? </p>
-        <p class="question-text"> Découvrez le<span style="color: #2B6ABC;"><strong> cœur de métier </strong></span>de notre agence </p>
+        <p class="question-text"> Découvrez le<span style="color: #2B6ABC;"><strong> cœur de métier </strong></span>de
+          notre agence </p>
       </div>
       <div class="question-button">
-        <a class="button" href="/About/About.html">Présentation</a>
-      </div>      
+        <a class="button" href="./About/About.html">Présentation</a>
+      </div>
     </div>
     <div class="question-card">
       <div class="question">
         <p class="question-header"> Vous cherchez un emploi ? </p>
-        <p class="question-text"> Vous pouvez <span style="color: #2B6ABC;"> <strong> déposer en ligne</strong></span> votre candidature </p>
+        <p class="question-text"> Vous pouvez <span style="color: #2B6ABC;"> <strong> déposer en ligne</strong></span>
+          votre candidature </p>
       </div>
       <div class="question-button">
-        <a class="button" href="/Postuler/Postuler.html">Espace candidats</a>
+        <a class="button" href="./Postuler/Postuler.html">Espace candidats</a>
       </div>
     </div>
     <div class="question-card">
       <div class="question">
         <p class="question-header"> Vous cherchez un renfort ?</p>
-        <p class="question-text"> <span style="color: #2B6ABC;"> <strong> Prenons contact </strong></span>pour trouver votre solution RH</p>
+        <p class="question-text"> <span style="color: #2B6ABC;"> <strong> Prenons contact </strong></span>pour trouver
+          votre solution RH</p>
       </div>
-       <div class="question-button">
-         <a class="button" href="/Contact/Contact.html">Espace entreprises</a>
-       </div>   
+      <div class="question-button">
+        <a class="button" href="./Contact/Contact.html">Espace entreprises</a>
+      </div>
     </div>
   </div>
-<!-- QUESTIONS CARDS END -->
+  <!-- QUESTIONS CARDS END -->
 
 
 
-<!-- CONTACT BEGIN -->
-<div class="contact-zone">
-  <div class="contact-text">
-    <h2>Si vous avez besoin de plus d'informations n'hésitez pas à nous contacter !</h2>
-    <br>
-    <br>
-    <a class="contact-btn" href="/Contact/Contact.html">Contactez-nous</a>
+  <!-- CONTACT BEGIN -->
+  <div class="contact-zone">
+    <div class="contact-text">
+      <h2>Si vous avez besoin de plus d'informations n'hésitez pas à nous contacter !</h2>
+      <br>
+      <br>
+      <a class="contact-btn" href="./Contact/Contact.html">Contactez-nous</a>
+    </div>
   </div>
-</div>
 
-<!-- CONTACT END -->
+  <!-- CONTACT END -->
 
- <!-- BODY CONTENT END -->
+  <!-- BODY CONTENT END -->
 
- 
+
 
 
   <!-- FOOTER BEGIN -->
   <footer class="footer-container">
     <div class="footer-top">
       <div class="footer-left">
-        <h3>MODERN SERVICES RECRUTEMENTS</h3>
+        <h3 class="footer-top-block-title">MODERN SERVICES RECRUTEMENTS</h3>
         <p>
-          La societé Modern Services Recrutements spécialisé en ressources humaines et conseil de gestion implanté à Casablanca et crée en 2017.
+          La societé Modern Services Recrutements spécialisé en ressources humaines et conseil de gestion implanté à
+          Casablanca et crée en 2017.
         </p>
       </div>
       <div class="footer-right">
-        <h3>NOUS TROUVER</h3>
+        <h3 class="footer-top-block-title">NOUS TROUVER</h3>
         <p>
           97 Rue Araar Etg 3 Mers Sultan <br>
           Casablanca <br>
@@ -250,19 +300,19 @@
         </p>
       </div>
       <div class="footer-right">
-        <h3>LIENS UTILES</h3>
+        <h3 class="footer-top-block-title">LIENS UTILES</h3>
         <ul class="footer-list">
           <li class="footer-item">
-            <a class="footer-item-link" href="/index.html">Acceuil</a>
+            <a class="footer-item-link" href="./index.html">Acceuil</a>
           </li>
           <li class="footer-item">
-            <a class="footer-item-link" href="/About/About.html">Qui Sommes Nous?</a>
+            <a class="footer-item-link" href="./About/About.html">Qui Sommes Nous?</a>
           </li>
           <li class="footer-item">
-            <a class="footer-item-link" href="/Postuler/Postuler.html">Postuler</a>
+            <a class="footer-item-link" href="./Postuler/Postuler.html">Postuler</a>
           </li>
           <li class="footer-item">
-            <a class="footer-item-link" href="/Contact/Contact.html">Contact</a>
+            <a class="footer-item-link" href="./Contact/Contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -273,6 +323,7 @@
     </div>
   </footer>
   <!-- FOOTER END -->
-  
+
 </body>
+
 </html>

@@ -30,10 +30,14 @@ html, body
 
 /* HEADER STYLE BEGIN */
 /* just the hover, the rest is done by Bootstrap */
+.navbar-nav > li {
+    padding-right:30px !important;
+  }
 .nav-link:hover
 {
-    color: white !important;
-    background-color: rgb(59, 63, 59) !important;
+    color: #ecf4ff !important;
+    background-color: rgb(5, 5, 44) !important;
+    border-radius: 5px;
 }
 /* HEADER STYLE END */
 
@@ -81,6 +85,7 @@ footer {
 .footer-top-block-title
 {
     margin-bottom: 10px;
+    font-size: 1.3rem;
 }
  .footer-left
  {
@@ -122,6 +127,7 @@ footer {
      background-color:  rgb(5, 5, 44) ;
      padding: 4px 8px;
      border-radius: 5px;
+     text-decoration: none;
  }
  .footer-item-link{
      color: whitesmoke ;
@@ -242,8 +248,13 @@ footer {
     background-color: #014ca8;
     color: whitesmoke;
 }
+.recrutement-annonce, .recrutement-distance
+{
+    transition: 1s;
+}
 .recrutement-annonce:hover, .recrutement-distance:hover
 {
+    transition: 1s;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
     transform: translate3d(0px, -5px, 0px);

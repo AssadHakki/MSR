@@ -29,7 +29,6 @@ html, body
 
 
 
-
 /* HEADER STYLE BEGIN */
 /* just the hover, the rest is done by Bootstrap */
 .navbar-nav > li
@@ -40,14 +39,18 @@ html, body
 {
     color: black !important;
      text-transform: uppercase !important;
+     transition: 1s;
 }
 .nav-link:hover
 {
     color: #ecf4ff !important;
     background-color: rgb(5, 5, 44) !important;
     border-radius: 5px;
+    transition: 1s;
 }
 /* HEADER STYLE END */
+
+
 
 
 
@@ -62,7 +65,6 @@ footer {
     margin: auto;
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
-    
  }
  
  .footer-container{
@@ -108,15 +110,15 @@ footer {
 }
 
  
- .footer-right{
-     display: flex;
-     flex-direction: column;
-     flex: 20%;
-     text-align: center;
-     margin: 15px;
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    flex: 20%;
+    text-align: center;
+    margin: 15px;
 
-    }
-    
+}
+
     
 
  .footer-list{
@@ -179,6 +181,7 @@ footer {
 {
     display: flex;
     align-self: flex-start;
+    align-items: center;
     width: 100%; 
     height: 45%;
     background-image: url('./../Assets/Images/Contact.png');
@@ -200,11 +203,26 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 50px 0px 200px;
+    margin: 50px 0px 100px 0px;
     width: 100%;
     justify-content: space-around;
     padding: 30px;
 }
+.contact-us
+{
+    background-color: white;
+
+    min-width: 300px;
+    width: 50%;
+    height: fit-content;
+
+    margin: 20px;
+    padding: 25px;
+    margin-bottom: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    
+    border-radius: 6px;
+}
+
 .adresse-container
 {
     min-width: 300px;
@@ -234,20 +252,6 @@ footer {
     transform: translate3d(0px, -5px, 0px);
 }
 
-.contact-us
-{
-    background-color: white;
-
-    min-width: 300px;
-    width: 50%;
-    height: fit-content;
-
-    margin: 20px;
-    padding: 25px;
-    margin-bottom: 50px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    
-    border-radius: 6px;
-}
 
 /* Form container END */
 

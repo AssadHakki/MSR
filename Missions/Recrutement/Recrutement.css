@@ -28,7 +28,6 @@ html, body
 
 
 
-
 /* HEADER STYLE BEGIN */
 /* just the hover, the rest is done by Bootstrap */
 .navbar-nav > li
@@ -39,14 +38,18 @@ html, body
 {
     color: black !important;
      text-transform: uppercase !important;
+     transition: 1s;
 }
 .nav-link:hover
 {
     color: #ecf4ff !important;
     background-color: rgb(5, 5, 44) !important;
     border-radius: 5px;
+    transition: 1s;
 }
 /* HEADER STYLE END */
+
+
 
 
 
@@ -177,9 +180,11 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     background-color: #014ca8;
     width: 100%;
     color: whitesmoke;
+    padding: 30px;
 }
 
 .blue-zone-text{
@@ -194,10 +199,9 @@ footer {
 
 .blue-zone-image{
     width: 40%;
-    padding: 50px;
     text-align: center;
     min-width: 300px;
-    margin: 10px;
+    margin: 15px;
 }
 
 .header-and-separator{
@@ -225,6 +229,7 @@ footer {
 }
 .blue-zone-image:hover img
 {
+    padding: 10px;
     transition: 1s;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
@@ -274,6 +279,7 @@ footer {
 
 .recrutement-header{
     font-size: 26px;
+    font-weight: 600;
     margin: 37px 0px;
     border-bottom: 1px solid whitesmoke;
     padding-bottom: 15px;

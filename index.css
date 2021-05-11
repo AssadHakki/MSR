@@ -192,7 +192,8 @@ footer {
     text-align: center;
     margin: 0 60px 10px 20px;
     font-size: 15px;
-    
+    padding: 10px;
+
 }
 .engagement-card{
     transition: 1s;
@@ -224,7 +225,13 @@ footer {
 
 
 /* QUESTIONS CARDS */
-
+.divider
+{
+    height: 3px;
+    background-color: rgb(51, 161, 161);
+    width: 50%;
+    margin-left: 10px;
+}
 .question-container{
     display: flex;
     flex-direction: row;
@@ -235,13 +242,18 @@ footer {
 }
 .question-card{
     width: 420px;
+    min-width: 300px;
     padding: 0px 20px;
     text-align: center;
     margin: 20px;
-
 }
-.question
-{
+
+.question{
+    background-color: whitesmoke;
+    border: 1px solid rgba(65, 100, 161, 0.179);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     transition: 1s;
 }
 .question:hover 
@@ -251,20 +263,14 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
     transform: translate3d(0px, -1px, 0px);
 }
-.question{
-    border: 1px solid rgba(65, 100, 161, 0.179);
-    padding: 20px 20px 50px 20px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: whitesmoke;
-}
 .question-header{
-    font-size: 22px;
-    font-weight: 800;
+
+    font-size: 20px;
+    font-weight: 600;
     color: rgb(22, 22, 22);
 }
 .question-text{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.8;
     margin-top: 25px;
 }
@@ -343,14 +349,20 @@ footer {
     margin: 100px 0;
 }
 
-.rec-image{
-    width: 30%;
 
-}
 .rec-image{
     width: 450px;
     height: 450px;
     margin-top: 45px;
+    transition: 1s;
+    padding: 5px;
+}
+.rec-image:hover
+{
+    padding: 0;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    transform: translate3d(0px, -5px, 0px);
 }
 .rec-text
 {

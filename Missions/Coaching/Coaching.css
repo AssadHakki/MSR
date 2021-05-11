@@ -31,9 +31,15 @@ html, body
 
 /* HEADER STYLE BEGIN */
 /* just the hover, the rest is done by Bootstrap */
-.navbar-nav > li {
+.navbar-nav > li
+{
     padding-right:30px !important;
-  }
+}
+.nav-link
+{
+    color: black !important;
+     text-transform: uppercase !important;
+}
 .nav-link:hover
 {
     color: #ecf4ff !important;
@@ -41,6 +47,7 @@ html, body
     border-radius: 5px;
 }
 /* HEADER STYLE END */
+
 
 
 

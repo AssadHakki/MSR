@@ -28,7 +28,6 @@ html, body
 
 
 
-
 /* HEADER STYLE BEGIN */
 /* just the hover, the rest is done by Bootstrap */
 .navbar-nav > li
@@ -39,14 +38,18 @@ html, body
 {
     color: black !important;
      text-transform: uppercase !important;
+     transition: 1s;
 }
 .nav-link:hover
 {
     color: #ecf4ff !important;
     background-color: rgb(5, 5, 44) !important;
     border-radius: 5px;
+    transition: 1s;
 }
 /* HEADER STYLE END */
+
+
 
 
 
@@ -175,7 +178,7 @@ footer {
    
 }
 .separator{
-    width: 40%;
+    margin: 0 100px 0 100px;
 }
 
 .coaching-blue-zone{
@@ -188,16 +191,23 @@ footer {
     color: whitesmoke;
     padding: 100px 0px;
     align-items: center;
-    text-align: center;
+    text-align: left;
 
     margin: 0px 0px 130px 0px;
 }
 
 .coaching-image{
-
     margin-bottom: 90px;
-
+    transition: 1s;
 }
+.coaching-image:hover
+{
+    cursor: pointer;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    transform: translate3d(0px, -5px, 0px);
+}
+
 .coaching-text{
 
     width: 53%;

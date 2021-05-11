@@ -29,26 +29,27 @@ html, body
 
 
 
+
 /* HEADER STYLE BEGIN */
 /* just the hover, the rest is done by Bootstrap */
 .navbar-nav > li
 {
-    padding-right:30px !important;
+    padding-right: 15px !important;
 }
 .nav-link
 {
     color: black !important;
      text-transform: uppercase !important;
+     transition: 1s;
 }
 .nav-link:hover
 {
     color: #ecf4ff !important;
     background-color: rgb(5, 5, 44) !important;
     border-radius: 5px;
+    transition: 1s;
 }
 /* HEADER STYLE END */
-
-
 
 
 

@@ -34,7 +34,7 @@ html, body
 /* just the hover, the rest is done by Bootstrap */
 .navbar-nav > li
 {
-    padding-right:30px !important;
+    padding-right: 15px !important;
 }
 .nav-link
 {

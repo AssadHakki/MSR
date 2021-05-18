@@ -127,7 +127,6 @@ footer {
  
  
  .footer-item{
-     margin-right: 30px;
      margin-bottom: 10px;
  }
  
@@ -187,18 +186,18 @@ footer {
     padding: 30px;
 }
 
+
 .blue-zone-text{
-   width: 40%;
+   width: 600px;
    padding: 30px;
    margin: 15px;
-   min-width: 300px;
 }
 .blue-zone-text-header{
     text-align: center;
 }
 
 .blue-zone-image{
-    width: 40%;
+    width: 400px;
     text-align: center;
     min-width: 300px;
     margin: 15px;
@@ -222,18 +221,6 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around; 
     margin: 30px;
-}
-.blue-zone-image img
-{
-    transition: 1s;
-}
-.blue-zone-image:hover img
-{
-    padding: 10px;
-    transition: 1s;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-    transform: translate3d(0px, -5px, 0px);
 }
 
 .recrutement-annonce{

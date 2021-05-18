@@ -128,7 +128,6 @@ footer {
  
  
  .footer-item{
-     margin-right: 30px;
      margin-bottom: 10px;
  }
  
@@ -212,7 +211,7 @@ footer {
     min-width: 300px;
     height: fit-content;
 
-    padding: 50px;
+    padding: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     border-radius: 6px;
     margin: 30px;
@@ -230,6 +229,34 @@ form[name="postuler-form"]
      background-color: whitesmoke;
      padding: 15px;
 }
+
+
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+.upload-btn {
+    border: 1px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+  
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+
 
 
 /* Style form content BEGIN */

@@ -129,7 +129,6 @@ footer {
  
  
  .footer-item{
-     margin-right: 30px;
      margin-bottom: 10px;
  }
  
@@ -198,20 +197,16 @@ footer {
 
 .coaching-image{
     margin-bottom: 90px;
-    transition: 1s;
+   
 }
-.coaching-image:hover
-{
-    cursor: pointer;
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
-    transform: translate3d(0px, -5px, 0px);
-}
+
 
 .coaching-text{
 
-    width: 53%;
-    font-size: 30px;
+    max-width: 700px;
+    min-width: 300px;
+    text-align: center;
+    font-size: 25px;
 }
 
 

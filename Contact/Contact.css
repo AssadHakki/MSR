@@ -127,7 +127,6 @@ footer {
  
  
  .footer-item{
-     margin-right: 30px;
      margin-bottom: 10px;
  }
  
@@ -167,7 +166,6 @@ footer {
 /* Form container BEGIN */
 .background-image
 {
-  
     width: 100%; 
     height: 100%;
     background-image: url('./../Assets/Images/Background.jpg');

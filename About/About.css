@@ -127,7 +127,6 @@ footer {
  
  
  .footer-item{
-     margin-right: 30px;
      margin-bottom: 10px;
  }
  
@@ -202,30 +201,17 @@ footer {
     height: 100%; 
     min-width: 300px;
 }
-.about-image:hover
-{
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
-    transform: translate3d(0px, -5px, 0px);
-}
+
 
 .about-blue-zone-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px ;
     width: 40%;
     min-width: 250px;
 }
 
-.about-image
-{
-    transition: 1s;
 
-}
-.about-image:hover
-{
-    transition: 1s;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-    transform: translate3d(0px, -5px, 0px);
-}
 
 .about-blue-zone-text{
     width: 45%;
@@ -240,38 +226,22 @@ footer {
 .about-buttons{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 
-.button-contact{
+.button-postuler, .button-contact{
     text-align: center;
     padding: 8px 10px;
     background-color: #002046;
     color: whitesmoke;
-    margin: 80px 20px;
+    margin: 20px 20px 0;
     text-decoration: none;
     border-radius: 5px;
     text-transform: uppercase;
     /* text-emphasis: initial; */
     display: inline-block;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    width: fit-content;
-    transition: 1s;
-}
-
-.button-postuler{
-    text-align: center;
-    padding: 8px 10px;
-    background-color: #002046;
-    color: whitesmoke;
-    margin: 80px 0px;
-    text-decoration: none;
-    border-radius: 5px;
-    text-transform: uppercase;
-    /* text-emphasis: initial; */
-    display: inline-block;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     width: 186px;
     transition: 1s;
 }
